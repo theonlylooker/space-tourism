@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*,*::before,*::after{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --primary: hsl(230, 35%, 7%);
+  --secondary: hsl(231, 77%, 90%);
+  --ternary: hsl(0, 0%, 100%);
+  --font1: 'Barlow Condensed', sans-serif;
+  --font2: 'Bellefair', serif;
+}
+
+html{
+  background: url("./assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-family: var(--font2);
 }
