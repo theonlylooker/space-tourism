@@ -13,8 +13,134 @@
 }
 
 html{
+  color: var(--ternary);
+  font-family: var(--font2);
+  font-weight: 400;
+}
+
+.layout__background{
+  top: 0;
+  left: 0;
+  width: 375px;
+  z-index: -1;
+  position: fixed;
+}
+.bg-home{
   background: url("./assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
-  color: #FFF;
-  font-family: var(--font2);
+  height: 667px;
 }
+.bg-destination{
+  background: url("./assets/destination/background-destination-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 850px;
+}
+.bg-crew{
+  background: url("./assets/crew/background-crew-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 710px;
+}
+.bg-technology{
+  background: url("./assets/technology/background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  height: 710px;
+}
+
+.primary{
+  color: var(--primary);
+}
+.secondary{
+  color: var(--secondary);
+}
+.ternary{
+  color: var(--ternary);
+}
+
+.heading1{
+  font-family: var(--font2);
+  font-size: 5rem;
+  font-weight: 300;
+}
+.heading2{
+  font-family: var(--font2);
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.heading3{
+  font-family: var(--font2);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.heading4{
+  font-family: var(--font2);
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.5;
+  text-transform: uppercase;
+} 
+.heading5{
+  font-family: var(--font1);
+  font-size: 1rem;
+  letter-spacing: 0.169rem;
+}
+.subheading1{
+  font-family: var(--font2);
+  font-size: 1rem;
+}
+.subheading2{
+  font-family: var(--font1);
+  font-size: 0.875rem;
+  letter-spacing: 0.147rem;
+}
+.navtext{
+  font-family: var(--font1);
+  font-size: 0.875rem;
+  letter-spacing: 0.147rem;
+}
+.bodytext{
+  font-family: var(--font1);
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+}
+/* desktop version */
+/* .heading1{
+  font-family: var(--font2);
+  font-size: 9.375rem;
+}
+.heading2{
+  font-family: var(--font2);
+  font-size: 6.25rem;
+}
+.heading3{
+  font-family: var(--font2);
+  font-size: 3.5rem;
+}
+.heading4{
+  font-family: var(--font2);
+  font-size: 2rem;
+}
+.heading5{
+  font-family: var(--font1);
+  font-size: 1.75rem;
+  letter-spacing: 0.297rem
+}
+.subheading1{
+  font-family: var(--font2);
+  font-size: 1.75rem;
+}
+.subheading2{
+  font-family: var(--font1);
+  font-size: 0.875rem;
+  letter-spacing: 0.147rem;
+}
+.navtext{
+  font-family: var(--font1);
+  font-size: 1rem;
+  letter-spacing: 0.169rem;
+}
+.bodytext{
+  font-family: var(--font1);
+  font-size: 1.125rem;
+  line-height: 2rem;
+}       */
