@@ -11,13 +11,17 @@ import { Fetch } from "./types/type";
 
 function App() {
   //const [data, setData] = useState();
-  const URLS = [
-    "http://localhost:5000/destinations",
-    "http://localhost:5000/crew",
-    "http://localhost:5000/technology",
+  // const URLS1 = [
+  //   "http://localhost:5000/destinations",
+  //   "http://localhost:5000/crew",
+  //   "http://localhost:5000/technology",
+  // ];
+  const URLS2 = [
+    "https://fake-spaceapi-app.herokuapp.com/destinations",
+    "https://fake-spaceapi-app.herokuapp.com/crew",
+    "https://fake-spaceapi-app.herokuapp.com/technology",
   ];
-  const data: Fetch = useMultiFetch(URLS);
-
+  const data: Fetch = useMultiFetch(URLS2);
   return (
     <div className="App">
       <HashRouter>
