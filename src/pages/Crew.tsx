@@ -10,32 +10,42 @@ const Crew = ({ data }: crewProps) => {
   const [nav, handleNav] = useNav();
   return (
     <div className="crew">
-      <div>
-        <div className="crew__headertext heading5">
-          <span className="crew__numeration">02</span>
-          <span className="crew__title">MEET YOUR CREW</span>
+      <div className="crew__headertext heading5">
+        <span className="crew__numeration">02</span>
+        <span className="crew__title">MEET YOUR CREW</span>
+      </div>
+      <div className="crew__parts">
+        <div className="crew__imageparts">
+          <figure className="crew__figure">
+            <img
+              className="crew__image"
+              src={images[members[nav]]}
+              alt="crew member"
+            />
+          </figure>
+          <hr className="crew__line" />
+        </div>
+        <div className="crew__textparts">
+          <nav className="crewnav">
+            <ul className="crewnav__list">
+              {members.map((element, index) => (
+                <li
+                  key={index}
+                  className="crewnav__item"
+                  onClick={() => handleNav(index)}
+                >
+                  <div className="dot"></div>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="crew__bodytext">
+            <h3 className="heading4">{data[nav].role}</h3>
+            <h2 className="heading3">{data[nav].name}</h2>
+            <p className="crew__bio bodytext secondary">{data[nav].bio}</p>
+          </div>
         </div>
       </div>
-      <figure className="crew__figure">
-        <img
-          className="crew__image"
-          src={images[members[nav]]}
-          alt="crew member"
-        />
-      </figure>
-      <hr className="crew__line" />
-      <nav className="crewnav">
-        <ul className="crewnav__list">
-          {members.map((element, index) => (
-            <li className="crewnav__item" onClick={() => handleNav(index)}>
-              <div className="dot"></div>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <h3 className="heading4">{data[nav].role}</h3>
-      <h2 className="heading3">{data[nav].name}</h2>
-      <p className="bodytext secondary">{data[nav].bio}</p>
     </div>
   );
 };

@@ -4,9 +4,14 @@
 }
 .home{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 .home__text{
+    align-self: center;
     padding-top: 1.5rem;
+    max-width: 50ch;
 }
 .home__title{
     margin: 1rem;
@@ -73,7 +78,15 @@
 .modal-close{
     display: none;
 }
-
+.destination{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.destination__body{
+    display: flex;
+    flex-direction: column;
+}
 .destination__headertext{
     text-align: center;
     margin-bottom: 2rem;
@@ -114,6 +127,8 @@
 }
 .destination__bodytext{
     text-align: center;
+    max-width: 50ch;
+    align-self: center;
 }
 .destination__name{
     margin: 0px;
@@ -132,16 +147,33 @@
 }
 .destination__distance{
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 .destination__traveltimetitle{
     margin-bottom: 0.75rem;
 }
 .destination__traveltime{
     margin-bottom: 2.125rem;
+    text-transform: uppercase;
+}
+.destination__information{
+    display: flex;
+    flex-direction: column;
 }
 
 .crew{
     text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.crew__textparts{
+    display: flex;
+    flex-direction: column;
+}
+.crew__bodytext{
+    max-width: 50ch;
+    align-self: center;
 }
 .crew__numeration{
     margin-right: 1rem;
@@ -183,7 +215,14 @@
     opacity: 1;
 }
 .technology{
+    margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.technology__parts{
+    display: flex;
+    flex-direction: column;
 }
 .technology__numeration{
     display: inline-block;
@@ -196,15 +235,44 @@
     font-weight: 400;
     margin: 0;
 }
-.technology__image{
-    height: 170px;
+.technology__figure{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
 }
+.technology__image{
+    width: 100%;
+    height: 170px;
+    margin: 0 auto;
+}
+/* .destination__figure{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 1.625rem;
+}
+.destination__image{
+    width: 170px;
+    margin: auto;
+} */
+
 .technologynav__list{
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 1.625rem;
+}
+.technology__textparts{
+    display: flex;
+    flex-direction: column;
+}
+.technology__bodytext{
+    align-self: center;
+    max-width: 50ch;
+    display: flex;
+    flex-direction: column;
 }
 .dotcontent{
     height: 40px;
@@ -219,4 +287,195 @@
 .dotcontent:hover{
     background-color: var(--ternary);
     color: black;
+}
+
+@media(min-width:35rem){
+    .header__navbarbutton{
+        display: none;
+    }
+    .header__navbar{
+        display: flex;
+    }
+    .navbar{
+        margin-top: 0;
+        background-color:hsl(0 0% 100% / 0.04);
+    }
+    .navbar__item{
+        margin-bottom: 0;
+    }
+    .navbar__list{
+        display: flex;
+        gap: 1rem;
+    }
+    .navbar__counter{
+        display: none;
+    }
+    /* .home *{
+        max-width: 40ch;
+        border: solid red 1px;
+    } */
+    .destination__headertext{
+        align-self: flex-start;
+
+    }
+    .destination__bodytext{
+        text-align: center;
+    }
+    .destination__separation{
+        max-width: 35rem;
+    }
+    .destination__information{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .destination__image{
+        width: 18.75rem;
+        margin: auto;
+    }
+    .crew__line{
+        display: none;
+    }
+    .crew__bodytext{
+        max-width: 60ch;
+    }
+    .crew__bio{
+        max-width: 50ch;
+        margin: 0 auto;
+    }
+    .crew__headertext{
+        align-self: flex-start;
+    }
+    .crew__figure{
+        width: 28.563rem;
+        height: 35.75rem;
+        margin: auto;
+
+    }
+    .crew__parts{
+        display: flex;
+        flex-direction: column;
+    }
+    .crew__imageparts{
+        order: 2;
+    }
+    .crewnav{
+        order: 2;
+    }
+    .technology__headertext{
+        align-self: flex-start;
+    }
+    .technology__bodytext{
+        max-width: 80ch;
+    }
+    .technology__description{
+        max-width: 50ch;
+        margin: 0 auto;
+    }
+    .home__button{
+        width: 242px;
+        height: 242px;
+    }
+    .dotcontent{
+        height: 60px;
+        width: 60px;
+    }
+    .navbar{
+        padding: 1rem 1rem;
+    }
+}
+@media(min-width:45rem){
+    .home{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 15rem;
+    }
+    .home__text{
+        text-align: left;
+    }
+    .destination{
+        padding-left: 5rem;
+        margin-top: 4.75rem;
+    }
+    .destination__parts{
+        display: flex;
+        justify-content: space-around;
+    }
+    .destination__bodytext{
+        text-align: left;
+    }
+    .destinationnav{
+        align-self: flex-start;
+    }
+    .crew__parts{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .crew__bodytext{
+        text-align: left;
+        max-width: 80ch;
+    }
+    .crewnav{
+        align-self: flex-start;
+    }
+    .crew__headertext{
+        margin-left: 8rem;
+    }
+    .crew__bio{
+        max-width: 50ch;
+        margin: 0;
+    }
+    .technology__parts{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .technology__textparts{
+        flex-direction: row;
+        text-align: left;
+        gap: 5rem;
+    }
+    .technology__imageparts{
+        order:2;
+    }
+    .technologynav__list{
+        flex-direction: column;
+    }
+    .technology__headertext{
+        margin-bottom: 8.5rem;  
+    }
+    .technology__bodytext{
+        max-width: 80ch;
+    }
+    .technology__vehicle{
+        line-height:3rem;
+    }
+    .technology__description{
+        max-width: 40ch;
+        margin: 0;
+    }
+    .technology__image{
+        width: 330px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .home__button{
+        width: 272px;
+        height: 272px;
+    }
+    .navbar{
+        backdrop-filter: blur(81.5485px);
+        padding: 1rem 3rem;
+    }
+    .navbar__counter{
+        display: inline;
+        margin-right: 0.5rem;
+    }
+    .navbar__item{
+        padding-right: 1rem;
+    }
+    .dotcontent{
+        height: 80px;
+        width: 80px;
+    }
 }
