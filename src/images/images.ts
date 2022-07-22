@@ -9,6 +9,9 @@ import VICTORGLOVER from "../assets/crew/image-victor-glover.png"
 import LAUNCHVEHICLE from "../assets/technology/image-launch-vehicle-portrait.jpg"
 import SPACECAPSULE from "../assets/technology/image-space-capsule-portrait.jpg"
 import SPACEPORT from "../assets/technology/image-spaceport-portrait.jpg"
+import LAUNCHVEHICLEL from "../assets/technology/image-launch-vehicle-landscape.jpg"
+import SPACECAPSULEL from "../assets/technology/image-space-capsule-landscape.jpg"
+import SPACEPORTL from "../assets/technology/image-spaceport-landscape.jpg"
 
 type a = {
     [key:string]: string,
@@ -26,6 +29,9 @@ const images:a ={
     LAUNCHVEHICLE:LAUNCHVEHICLE,
     SPACEPORT:SPACEPORT,
     SPACECAPSULE:SPACECAPSULE,
+    LAUNCHVEHICLEL:LAUNCHVEHICLEL,
+    SPACEPORTL:SPACEPORTL,
+    SPACECAPSULEL:SPACECAPSULEL,
 }
 export default images;
 

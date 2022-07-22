@@ -288,6 +288,9 @@
     background-color: var(--ternary);
     color: black;
 }
+.portrait{
+    display: none;
+}
 
 @media(min-width:35rem){
     .header__navbarbutton{
@@ -371,6 +374,9 @@
         max-width: 50ch;
         margin: 0 auto;
     }
+    .technology__image{
+        height: 310;
+    }
     .home__button{
         width: 242px;
         height: 242px;
@@ -429,6 +435,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        gap: 1rem;
     }
     .technology__textparts{
         flex-direction: row;
@@ -451,7 +458,7 @@
         line-height:3rem;
     }
     .technology__description{
-        max-width: 40ch;
+        max-width: 60ch;
         margin: 0;
     }
     .technology__image{
@@ -477,5 +484,11 @@
     .dotcontent{
         height: 80px;
         width: 80px;
+    }
+    .landscape{
+        display: none;
+    }
+    .portrait{
+        display: block;
     }
 }

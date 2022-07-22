@@ -16,10 +16,17 @@ const Technology = ({ data }: technologyProps) => {
       </div>
       <div className="technology__parts">
         <div className="technology__imageparts">
-          <figure className="technology__figure">
+          <figure className="technology__figure portrait">
             <img
               className="technology__image"
               src={images[vehicles[nav]]}
+              alt="vehicle"
+            />
+          </figure>
+          <figure className="technology__figure landscape">
+            <img
+              className="technology__image"
+              src={images[vehicles[nav] + "L"]}
               alt="vehicle"
             />
           </figure>
