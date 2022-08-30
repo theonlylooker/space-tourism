@@ -32,7 +32,7 @@ Users should be able to:
 -Tablet Size Version
 ![](./screenshots/tablet.png)
 -Mobile Size Version
-![](./screenshots/mobile.png)
+![](./screenshots/mobil.png)
 
 ### Links
 
